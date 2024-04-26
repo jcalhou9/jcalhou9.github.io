@@ -1,6 +1,15 @@
 /* Jeremy Calhoun */
 /* WEB110-N851 */
-/* Project Part 1 */
+/* Project Part 1 & 2 */
+
+/* Use the focus pseudo class to format valid and invalid selected boxes */
+input:valid:focus {
+	Border: .5ch dashed green;
+}
+
+input:invalid:focus {
+	border: .5ch dashed red;
+}
 
 /* background formatting */
 html {

@@ -1,6 +1,6 @@
 <!-- Jeremy Calhoun -->
 <!-- WEB110-N851 -->
-<!-- Project Part 1 -->
+<!-- Project Part 1 & 2-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -79,7 +79,7 @@
 			</section>
 			<!-- Include at least one input that is set for a mobile keyboard type -->
 			<section class="formRow">
-				<label for="contact_number">Contact Number</label><br>
+				<label for="contact_number">Contact Number(include dashes)</label><br>
 				<!-- Validate data with patterns and field lengths -->
 				<input type="tell" name="contact_name" id="contact_name" placeholder="555-555-5555"
 				pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
@@ -119,6 +119,7 @@
 		<form action="submissionCustomer.html" method="POST">
 					<h3>&#8226; Coffee bean order form &#8226;</h3>
 			<!-- text -->
+			<!-- Validate data with by having certain fields required -->
 			<section class="formRow">
 				<label for="contact_name">First and Last Name</label><br>
 				<input type="text" name="contact_name" id="contact_name" required >
@@ -130,9 +131,10 @@
 				pattern=".+@example\.com" size="30" required />
 			</section>
 			<!-- Include at least one input that is set for a mobile keyboard type -->
+			<!-- Validate data with patterns and field lengths -->
 			<section class="formRow">
-				<label for="contact_number">Contact Number</label><br>
-				<input type="tell" name="contact_name" id="contact_name" placeholder="555-555-5555"
+				<label for="contact_number">Contact Number(include dashes)</label><br>
+				<input type="tel" name="contact_name" id="contact_name" placeholder="555-555-5555"
 				pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
 			</section>
 			<!-- range sliders -->

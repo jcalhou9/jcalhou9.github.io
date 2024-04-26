@@ -1,3 +1,8 @@
+// <!-- Jeremy Calhoun -->
+// <!-- WEB110-N851 -->
+// <!-- Project Part 2-->
+
+
 "use strict";
 
 // Send an alert using JavaScript
@@ -13,7 +18,7 @@ setInterval("runClock()", 1000);
 Include a countdown function*/
 function runClock() {
 
-	//Store the currrent date and time
+	//Store the current date and time
 	const currentDay = new Date();
 	const dateStr = currentDay.toLocaleDateString();
 	const timeStr = currentDay.toLocaleTimeString();
@@ -33,7 +38,7 @@ function runClock() {
 	const minsLeft = currentDay.getMinutes();
 	const secsLeft = currentDay.getSeconds();
 
-	//Display the time left until New Year's Eve
+	//Display the time left until Christmas
 	document.getElementById("days").textContent = daysLeft;
 	document.getElementById("hrs").textContent = 23 - hrsLeft;
 	document.getElementById("mins").textContent = 59 - minsLeft;
