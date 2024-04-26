@@ -11,6 +11,7 @@
 	<!-- link CSS files -->
 	<link rel="stylesheet" type="text/css" href="layout.css">
 	<link rel="stylesheet" type="text/css" href="formatting.css">
+	<script src="timeClock.js" defer></script>
 	
     <title>Morning Brew</title>
 </head>
@@ -30,6 +31,21 @@
 	
 	<h2>Contact Us</h2>
 	<!-- Create and format a form with multiple field sets -->
+	
+	<article>
+		<h3>Current time and date</h3>
+		<p id="dateNow"></p>
+	</article>
+	
+	<article>
+		<h3>Time until Christmas!</h3>
+		<p id="countdown"></p>
+		    <p><span id="days">8</span> Days 
+            <span id="hrs">8</span> Hours </p>
+            <p><span id="mins">8</span> Minutes 
+            <span id="secs">8</span> Seconds </p>
+	</article>
+	
 	<article>
 		<form action="submissionSupplier.html" method="POST">
 		<!-- inline character references -->
