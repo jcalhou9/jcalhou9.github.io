@@ -16,10 +16,10 @@ runClock();
 setInterval("runClock()", 1000);
 
 
-//Fuction to create and run the countdown clock
+//Function to create and run the countdown clock
 function runClock() {
 
-	//Store the currrent date and time
+	//Store the current date and time
 	var currentDay = new Date();
 	var dateStr = currentDay.toLocaleDateString();
 	var timeStr = currentDay.toLocaleTimeString();
