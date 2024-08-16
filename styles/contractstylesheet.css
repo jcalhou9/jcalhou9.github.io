@@ -5,8 +5,15 @@ html {
 	background: #4a494f;
 }
 
+h1, p, footer {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
 h1, p {
 	color: white;
+	text-align: center;
 }
 
 h1 {
@@ -16,4 +23,8 @@ h1 {
 p {
 	font-family: cursive;
 	max-width: 700px;
+}
+
+li {
+	list-style-type: none;	
 }
