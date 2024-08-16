@@ -18,6 +18,9 @@ h1, p {
 
 h1 {
 	max-width: 600px;
+	background-color: #2f2f5d99;
+	border-radius: 30px;
+	padding:0.5ch 2ch;
 }
 
 p {
@@ -25,6 +28,18 @@ p {
 	max-width: 700px;
 }
 
-li {
-	list-style-type: none;	
+footer {
+	padding-top: 15ch;
+}
+
+li a {
+	color: white;
+	background-color: #2f2f5d99;
+	border-radius: 30px;
+	padding:1.5ch 3ch;	
+}
+
+li{
+	padding: 3ch;
+	list-style-type: none;
 }
