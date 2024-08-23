@@ -41,15 +41,24 @@ p, .courselist {
 	max-width: 700px;
 }
 
-footer {
-	padding-top: 15ch;
+main {
+	padding-bottom: 15ch;
 }
 
-footer li{
+footer {
+	max-width:1400px;
+	padding-top: 1ch;
+	background-color: black;
+	background-color: #2f2f5d99;
+	border-radius: 30px;
+	box-shadow:0 0 10px 3px #e4e0c1;
+}
+
+header li, footer li{
 	display: inline-flex;
 }
 
-li a {
+header li a, footer li a {
 	color: white;
 	background-color: #2f2f5d99;
 	border-radius: 30px;
@@ -57,9 +66,12 @@ li a {
 	box-shadow:0 0 10px 2px #e4e0c1;
 }
 
+header li a:hover, footer li a:hover {
+	background-color: #5b65db99;
+}
+
 li{
-	padding: 3ch;
-	list-style-type: none;
+	padding: 1ch;
 }
 
 .self {
