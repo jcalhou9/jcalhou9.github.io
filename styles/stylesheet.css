@@ -70,6 +70,11 @@ header li a:hover, footer li a:hover {
 	background-color: #5b65db99;
 }
 
+header li a:active, footer li a:active {
+	box-shadow:0 0 10px 10px #e4e0c1;
+
+}
+
 li{
 	padding: 1ch;
 }
