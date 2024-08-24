@@ -5,17 +5,13 @@ html {
 	background: #4a494f;
 }
 
-header, h2, h3, h4, p, footer, .mainlists {
+header, p, footer {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	color: white;
-	text-align: center;
 }
 
-h1, h2, h3 {
-	font-family: georgia;
-}
 
 header {
 	max-width: 1400px;
@@ -27,17 +23,28 @@ header {
 }
 
 h1{
+	font-family: georgia;
 	font-style: italic;
 }
 
 h2 {
+	font-family: georgia;
 	padding-bottom: 3ch;
 	font-size: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
 }
 
 h3 {
+	font-family: georgia;
 	padding-top: 3ch;
 	font-size: 2.5em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
 }
 
 p {
@@ -61,6 +68,7 @@ header li, footer li{
 	display: inline-flex;
 }
 
+/* webpage and social link buttons */
 header li a, footer li a {
 	color: white;
 	background-color: #2f2f5d99;
@@ -69,10 +77,12 @@ header li a, footer li a {
 	box-shadow:0 0 10px 2px #e4e0c1;
 }
 
+/* webpage and social link buttons */
 header li a:hover, footer li a:hover {
 	background-color: #5b65db99;
 }
 
+/* webpage and social link buttons */
 header li a:active, footer li a:active {
 	box-shadow:0 0 10px 10px #e4e0c1;
 
@@ -82,12 +92,14 @@ li{
 	padding: 1ch;
 }
 
+/* introduction picture */
 .self {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/* any list in the main section */
 .mainlists li {
 	list-style-type: disc;
 	font-family: cursive;
@@ -95,8 +107,11 @@ li{
 	max-width:700px;
 	margin-left: auto;
 	margin-right: auto;
+	color: white;
+	text-align: center;
 }
 
+/* webpage link buttons */
 .currentpage {
 	box-shadow:0 0 10px 3px #00e2ff;
 }
