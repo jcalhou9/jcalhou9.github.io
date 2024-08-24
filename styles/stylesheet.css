@@ -5,15 +5,16 @@ html {
 	background: #4a494f;
 }
 
-header, h2, h3, p, footer, .mainlists {
+header, h2, h3, h4, p, footer, .mainlists {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-}
-
-header, h2, h3, p, .mainlists  {
 	color: white;
 	text-align: center;
+}
+
+h1, h2, h3 {
+	font-family: georgia;
 }
 
 header {
@@ -25,6 +26,9 @@ header {
 	margin-bottom : 10ch;
 }
 
+h1{
+	font-style: italic;
+}
 
 h2 {
 	padding-bottom: 3ch;
