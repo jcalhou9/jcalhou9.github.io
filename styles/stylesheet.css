@@ -11,30 +11,29 @@ html {
 }
 
 header, footer {
-	margin-left: auto;
-	margin-right: auto;
+	max-width: max-content;
+	margin: auto;
 	text-align: center;
 	color: white;
+	background-color: #2f2f5d99;
+	box-shadow:0 0 10px 4px #e4e0c1;
+	border-radius: 30px;
+	padding:.5ch;
+
 }
 
-
-header {
-	max-width: 1400px;
-	background-color: #2f2f5d99;
-	box-shadow:0 0 10px 5px #e4e0c1;
-	border-radius: 30px;
-	padding:0.5ch 2ch;
-	margin-bottom : 10ch;
+header ul, footer ul{
+	padding:0ch 2ch;
 }
 
 h1{
 	font-family: georgia;
 	font-style: italic;
+	padding: 0ch 1ch;
 }
 
 h2 {
 	font-family: georgia;
-	padding-bottom: 1ch;
 	font-size: 3em;
 	margin-left: auto;
 	margin-right: auto;
@@ -44,7 +43,6 @@ h2 {
 
 h3 {
 	font-family: georgia;
-	padding-top: 3ch;
 	font-size: 2.5em;
 	margin-left: auto;
 	margin-right: auto;
@@ -60,16 +58,14 @@ p {
 	color: white;
 }
 
-main {
-	padding-bottom: 15ch;
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 98.7vh;
 }
 
-footer {
-	max-width:1600px;
-	padding-top: 1ch;
-	background-color: #2f2f5d99;
-	border-radius: 30px;
-	box-shadow:0 0 10px 3px #e4e0c1;
+main{
+	flex-grow: 1;
 }
 
 header li, footer li{
@@ -95,7 +91,6 @@ header li a:hover, footer li a:hover {
 /* webpage and social link buttons */
 header li a:active, footer li a:active {
 	box-shadow:0 0 10px 10px #e4e0c1;
-
 }
 
 li{
@@ -113,7 +108,6 @@ li{
 .mainlists li {
 	list-style-type: disc;
 	font-family: myfont;
-	padding: 1ch;
 	max-width:700px;
 	margin-left: auto;
 	margin-right: auto;
