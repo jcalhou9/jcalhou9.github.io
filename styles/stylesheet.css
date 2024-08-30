@@ -1,25 +1,19 @@
 /* Jeremy Calhoun */
 /* WEB115-N801 Fall 24 */
 
-@font-face {
-	font-family: 'myfont';
-	src: url(fonts/comic_sans_ms.ttf);
-}
 
 html {
-	background: #4a494f;
+	background: #333333;
 }
 
-header, footer {
-	max-width: max-content;
+header, footer{
+	width: 1215px;
 	margin: auto;
 	text-align: center;
-	color: white;
+	color: #c5ffff;
 	background-color: #2f2f5d99;
 	box-shadow:0 0 10px 4px #e4e0c1;
 	border-radius: 30px;
-	padding:.5ch;
-
 }
 
 header ul, footer ul{
@@ -27,55 +21,62 @@ header ul, footer ul{
 }
 
 h1{
-	font-family: georgia;
-	font-style: italic;
-	padding: 0ch 1ch;
+	font-family: Garamond;
+	font-size: 3em;
 }
 
 h2 {
-	font-family: georgia;
-	font-size: 3em;
-	margin-left: auto;
-	margin-right: auto;
+	font-family: Garamond;
+	font-size: 2.5em;
+	margin: auto;
 	text-align: center;
-	color: white;
+	color: #7ca3f5;
+	padding: .5ch;
 }
 
 h3 {
-	font-family: georgia;
-	font-size: 2.5em;
-	margin-left: auto;
-	margin-right: auto;
+	font-family: Garamond;
+	margin: auto;
 	text-align: center;
-	color: white;
+	color: #7ca3f5;
 }
 
 p {
-	font-family: myfont;
+	font-family: tahoma;
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	color: white;
+	color: #c5ffff;
 }
 
 body{
+	padding-top: .6ch;
 	display: flex;
 	flex-direction: column;
-	min-height: 98.7vh;
+	min-height: 98.5vh;
+	margin: auto;
 }
 
 main{
+	display: flex;
+	flex-direction: column;
 	flex-grow: 1;
+	justify-content: center;
+}
+
+article{
+	padding-bottom: .5ch;
 }
 
 header li, footer li{
 	display: inline-flex;
+	padding: 1ch;
 }
 
 /* webpage and social link buttons */
 header li a, footer li a {
-	color: white;
-	font-family: myfont;
+	color: #c5ffff;
+	font-family: tahoma;
 	text-decoration:none;
 	background-color: #2f2f5d99;
 	border-radius: 30px;
@@ -94,7 +95,7 @@ header li a:active, footer li a:active {
 }
 
 li{
-	padding: 1ch;
+	/* padding: 1ch; */
 }
 
 /* webpage pictures */
@@ -107,11 +108,11 @@ li{
 /* any list in the main section */
 .mainlists li {
 	list-style-type: disc;
-	font-family: myfont;
+	font-family: tahoma;
 	max-width:700px;
 	margin-left: auto;
 	margin-right: auto;
-	color: white;
+	color: #c5ffff;
 }
 
 /* webpage link buttons */
@@ -121,4 +122,10 @@ li{
 
 .captions {
 	text-align: center;
+}
+
+@media only screen and (max-width: 1215px) {
+	header, footer{
+	width: 98%;
+	}
 }
