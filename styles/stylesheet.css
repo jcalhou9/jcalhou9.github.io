@@ -2,11 +2,12 @@
 /* WEB115-N801 Fall 24 */
 
 
+
 html {
 	background: #333333;
 }
 
-header, footer{
+header, footer {
 	width: 1215px;
 	margin: auto;
 	text-align: center;
@@ -16,11 +17,12 @@ header, footer{
 	border-radius: 30px;
 }
 
-header ul, footer ul{
+header ul, footer ul {
 	padding:0ch 2ch;
 }
 
-h1{
+
+h1 {
 	font-family: Garamond;
 	font-size: 3em;
 }
@@ -31,7 +33,7 @@ h2 {
 	margin: auto;
 	text-align: center;
 	color: #7ca3f5;
-	padding: .5ch;
+	/* padding: .5ch; */
 }
 
 h3 {
@@ -44,12 +46,11 @@ h3 {
 p {
 	font-family: tahoma;
 	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	color: #c5ffff;
 }
 
-body{
+body {
 	padding-top: .6ch;
 	display: flex;
 	flex-direction: column;
@@ -57,18 +58,23 @@ body{
 	margin: auto;
 }
 
-main{
+main {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: center;
 }
 
-article{
-	padding-bottom: .5ch;
+main ul {
+	padding: 0;
+	margin: auto;
 }
 
-header li, footer li{
+article {
+	padding-bottom: 2ch;
+}
+
+header li, footer li {
 	display: inline-flex;
 	padding: 1ch;
 }
@@ -94,15 +100,10 @@ header li a:active, footer li a:active {
 	box-shadow:0 0 10px 10px #e4e0c1;
 }
 
-li{
-	/* padding: 1ch; */
-}
-
 /* webpage pictures */
 .image {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 /* any list in the main section */
@@ -110,8 +111,7 @@ li{
 	list-style-type: disc;
 	font-family: tahoma;
 	max-width:700px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	color: #c5ffff;
 }
 
@@ -125,7 +125,7 @@ li{
 }
 
 @media only screen and (max-width: 1215px) {
-	header, footer{
+	header, footer {
 	width: 98%;
 	}
 }
