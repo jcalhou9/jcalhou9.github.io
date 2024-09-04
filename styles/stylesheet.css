@@ -2,13 +2,12 @@
 /* WEB115-N801 Fall 24 */
 
 
-
 html {
 	background: #333333;
 }
 
 header, footer {
-	width: 1215px;
+	width: 120ch;
 	margin: auto;
 	text-align: center;
 	color: #c5ffff;
@@ -23,6 +22,7 @@ header ul, footer ul {
 
 
 h1 {
+	margin-top: .5ch;
 	font-family: Garamond;
 	font-size: 3em;
 }
@@ -33,7 +33,6 @@ h2 {
 	margin: auto;
 	text-align: center;
 	color: #7ca3f5;
-	/* padding: .5ch; */
 }
 
 h3 {
@@ -54,8 +53,16 @@ body {
 	padding-top: .6ch;
 	display: flex;
 	flex-direction: column;
-	min-height: 98.5vh;
+	min-height: 99.5vh;
 	margin: auto;
+}
+
+footer p {
+	margin-bottom: 2ch;
+}
+
+footer {
+	margin-bottom: 1ch;
 }
 
 main {
@@ -71,13 +78,18 @@ main ul {
 }
 
 article {
-	padding-bottom: 2ch;
+	margin-top: 1ch;
+	margin-bottom: 2ch;
 }
 
 header li, footer li {
 	display: inline-flex;
 	padding: 1ch;
 }
+
+/* header li { */
+	/* padding-bottom: 3ch; */
+/* } */
 
 /* webpage and social link buttons */
 header li a, footer li a {
@@ -98,6 +110,16 @@ header li a:hover, footer li a:hover {
 /* webpage and social link buttons */
 header li a:active, footer li a:active {
 	box-shadow:0 0 10px 10px #e4e0c1;
+}
+
+/* link for introduction in paragraph in welcome */
+.intro_link {
+	font-family: tahoma;
+	color: #c5ffff;
+}
+
+.intro_link:hover {
+	color: #7ca3f5;
 }
 
 /* webpage pictures */
@@ -124,7 +146,7 @@ header li a:active, footer li a:active {
 	text-align: center;
 }
 
-@media only screen and (max-width: 1215px) {
+@media only screen and (max-width: 120ch) {
 	header, footer {
 	width: 98%;
 	}
