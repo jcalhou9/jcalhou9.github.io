@@ -113,12 +113,12 @@ header li a:active, footer li a:active {
 }
 
 /* link for introduction in paragraph in welcome */
-.intro_link {
+.introlink {
 	font-family: tahoma;
 	color: #c5ffff;
 }
 
-.intro_link:hover {
+.introlink:hover {
 	color: #7ca3f5;
 }
 
