@@ -1,6 +1,6 @@
 
 
-function greetUser() {
+document.getElementById("submit").onclick = function greetUser() {
 
     const firstName = document.getElementById("first-name").value;
     const middleInitial = document.getElementById("middle-initial").value;
@@ -22,4 +22,4 @@ function greetUser() {
         listItem.textContent = `${i}. Bazoom Bazang - ${oddEvenText}`;
         outputList.appendChild(listItem); 
     }
-}
+};
