@@ -7,14 +7,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- link CSS files -->
-	<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="styles/fizzbuzz0.css">
-	
     <title>The Student Dreamer - Fizz Buzz 0 - WEB115</title>
 	<link rel="icon" type="image/x-icon" href="images/tab_logo.png">
+	<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="styles/fizzbuzz0.css">
 	<script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
-	<script src="scripts/javascript.js" defer="defer"></script>
+	<script src="scripts/fizzbuzz0.js" defer="defer"></script>
 </head>
 
 <body>
@@ -23,29 +21,28 @@
 			<!-- webpage links -->
 		<nav>
 			<ul>
-				<li><a href="index.html">Welcome</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="contract.html">Contract</a></li>
 				<li><a href="introduction.html">Introduction</a></li>
 				<li><a href="brand.html">Brand</a></li>
-                <li><a class="currentpage" href="fizzbuzz0.html">Fizz Buzz 0</a></li>
+                <li class="currentpage"><a href="fizzbuzz0.html">Fizz Buzz 0</a></li>
+				<li><a href="fizzbuzz1.html">Fizz Buzz 1</a></li>
 			</ul>
 		</nav>
     </header>
 	
 	<main>
-		<article>
-			<h2 id="greeting">Fizz Buzz 0</h2>
-			<fieldset class="name">
-				<label for="first-name">First Name</label>
-				<input id="first-name" placeholder=" First Name" >
-				<label for="middle-initial">Middle Initial</label>
-				<input id="middle-initial" placeholder=" Middle Initial" maxlength="1" >
-				<label for="last-name">Last Name</label>
-				<input id="last-name" placeholder=" Last Name" >
-				<button id="submit" type="submit">Let’s go</button>
-			</fieldset>
-			<ul id="output"></ul>
-		</article>
+		<h2 id="greeting">Fizz Buzz 0</h2>
+		<fieldset class="name">
+			<label for="first-name">First Name</label>
+			<input id="first-name" placeholder=" First Name" >
+			<label for="middle-initial">Middle Initial</label>
+			<input id="middle-initial" placeholder=" Middle Initial" maxlength="1" >
+			<label for="last-name">Last Name</label>
+			<input id="last-name" placeholder=" Last Name" >
+			<button id="submit" type="submit">Let’s go</button>
+		</fieldset>
+		<ul id="output"></ul>
 	</main>
 	
 	<footer>

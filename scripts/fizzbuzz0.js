@@ -6,6 +6,11 @@ document.getElementById("submit").onclick = function greetUser() {
     const middleInitial = document.getElementById("middle-initial").value;
     const lastName = document.getElementById("last-name").value;
 
+    if (!firstName || !lastName) {
+        alert("First and last names are required!");
+        return;
+    }
+
     const fullName = `${firstName} ${middleInitial}. ${lastName}`;
     
     const greetingElement = document.getElementById("greeting");
