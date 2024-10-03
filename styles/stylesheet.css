@@ -1,7 +1,6 @@
 /* Jeremy Calhoun */
 /* WEB115-N801 Fall 24 */
 
-
 html {
 	background: #333333;
 }
@@ -24,12 +23,12 @@ header nav, footer nav {
 
 h1 {
 	margin: .5ch 0;
-	font-family: Garamond;
-	font-size: 3em;
+	font-family: Calibri;
+	font-size: 2.5em;
 }
 
 h2 {
-	font-family: Garamond;
+	font-family: Calibri;
 	font-size: 2em;
 	text-align: center;
 	color: #7ca3f5;
@@ -37,7 +36,7 @@ h2 {
 }
 
 h3 {
-	font-family: Garamond;
+	font-family: Calibri;
 	text-align: center;
 	color: #7ca3f5;
 	margin: 1ch auto;
@@ -64,9 +63,6 @@ footer {
 	margin-bottom: 1ch;
 }
 
-img {
-	margin: 1ch auto;
-}
 
 main {
 	display: flex;
@@ -82,7 +78,7 @@ main ul {
 
 header li, footer li {
 	display: inline-flex;
-	padding: 1ch 3ch;
+	padding: 1ch 1ch;
 }
 
 /* webpage and social link buttons */
@@ -93,6 +89,19 @@ header li a, footer li a {
 	margin: auto;
 	color: #2f2f5d;
 	font-weight: bold;
+}
+
+/* webpage pictures */
+img {
+	display: block;
+	margin: 0ch auto 1ch;
+}
+
+figcaption {
+	text-align: center;
+	margin-top: 0ch;
+	font-family: tahoma;
+	color: #c5ffff;
 }
 
 /* webpage and social link buttons */
@@ -115,11 +124,6 @@ header li a:active, footer li a:active {
 	color: #7ca3f5;
 }
 
-/* webpage pictures */
-.image {
-	display: block;
-}
-
 /* any list in the main section */
 .mainlists li {
 	list-style-type: disc;
@@ -139,10 +143,6 @@ header li a:active, footer li a:active {
 	color: #c5ffff;
 }
 
-.captions {
-	text-align: center;
-	margin-top: 0ch;
-}
 
 @media only screen and (max-width: 120ch) {
 	header, footer {
