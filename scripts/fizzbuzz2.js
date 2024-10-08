@@ -17,23 +17,28 @@ document.getElementById("submit").onclick = function greetUser() {
     const greetingElement = document.getElementById("greeting");
     greetingElement.textContent = `Welcome to Fizz Buzz, ${fullName}!`;
 
-    
     const output = document.getElementById('output');
     const word3 = 'Student';
     const word5 = 'Dreamer';
-	const mainword ='Study';
+    const mainword = 'Study';
     const countLimit = 140;
+    const firstDivisor = 3;
+    const secondDivisor = 5;
+
+    function checkDivision(num, divisor) {
+        return num % divisor === 0;
+    }
 
     for (let count = 1; count <= countLimit; count++) {
         let listItem = document.createElement('li');
-        if (count % 3 === 0 && count % 5 === 0) {
+        if (checkDivision(count, firstDivisor) && checkDivision(count, secondDivisor)) {
             listItem.textContent = `${count}. ${word3} ${word5}`;
-        } else if (count % 3 === 0) {
+        } else if (checkDivision(count, firstDivisor)) {
             listItem.textContent = `${count}. ${word3}`;
-        } else if (count % 5 === 0) {
+        } else if (checkDivision(count, secondDivisor)) {
             listItem.textContent = `${count}. ${word5}`;
         } else {
-		listItem.textContent = `${count}. ${mainword}`;
+            listItem.textContent = `${count}. ${mainword}`;
         }
         output.appendChild(listItem);
     }

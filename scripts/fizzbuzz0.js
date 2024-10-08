@@ -1,4 +1,5 @@
-
+/* Jeremy Calhoun
+WEB115-N801 Fall 24 */
 
 document.getElementById("submit").onclick = function greetUser() {
 
@@ -11,7 +12,7 @@ document.getElementById("submit").onclick = function greetUser() {
         return;
     }
 
-    const fullName = `${firstName} ${middleInitial}. ${lastName}`;
+    const fullName = middleInitial ? `${firstName} ${middleInitial}. ${lastName}` : `${firstName} ${lastName}`;
     
     const greetingElement = document.getElementById("greeting");
     greetingElement.textContent = `Welcome to Fizz Buzz, ${fullName}!`;

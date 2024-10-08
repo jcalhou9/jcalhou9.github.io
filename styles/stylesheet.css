@@ -7,18 +7,39 @@ html {
 
 header, footer {
 	width: 100%;
-	margin: auto;
+	margin: 0 auto;
 	text-align: center;
 	color: #c5ffff;
 	background-color: #2f2f5d99;
 }
 
 header ul, footer ul {
+	display: flex;
+	justify-content: center;
 	padding:0ch;
 	margin: 0;
 }
+
+header li, footer li {
+	display: flex;
+}
+
+/* webpage and social link buttons */
+header li a, footer li a {
+	color: #c5ffff;
+	font-family: tahoma;
+	text-decoration: none;
+	padding: .7ch 1ch;
+	color: #2f2f5d;
+	font-weight: bold;
+}
+
 header nav, footer nav {
 	background-color: #77eefd;
+}
+
+footer p {
+	margin: 1ch auto;
 }
 
 h1 {
@@ -42,27 +63,24 @@ h3 {
 	margin: 1ch auto;
 }
 
-p {
+p{
 	font-family: tahoma;
-	max-width: 800px;
+	max-width: 75ch;
 	color: #c5ffff;
 	margin: 1ch auto;
+}
+
+p a {
+	font-family: tahoma;
+	color: #c5ffff;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	margin: 0;
 }
-
-footer p {
-	margin: 1ch auto;
-}
-
-footer {
-	margin-bottom: 1ch;
-}
-
 
 main {
 	display: flex;
@@ -73,22 +91,14 @@ main {
 
 main ul {
 	padding: 0;
-	margin: 1ch auto;
+	margin: .5ch auto;
 }
 
-header li, footer li {
-	display: inline-flex;
-	padding: 1ch 1ch;
-}
-
-/* webpage and social link buttons */
-header li a, footer li a {
-	color: #c5ffff;
+main dl {
 	font-family: tahoma;
-	text-decoration:none;
-	margin: auto;
-	color: #2f2f5d;
-	font-weight: bold;
+	max-width: 60ch;
+	color: #c5ffff;
+	margin: .5ch auto;
 }
 
 /* webpage pictures */
@@ -109,18 +119,7 @@ header li:hover, footer li:hover {
 	background-color: #5b65db99;
 }
 
-/* webpage and social link buttons */
-header li a:active, footer li a:active {
-	font-size: .9em;
-}
-
-/* link for introduction in paragraph in welcome */
-.introlink {
-	font-family: tahoma;
-	color: #c5ffff;
-}
-
-.introlink:hover {
+p a:hover {
 	color: #7ca3f5;
 }
 
@@ -128,9 +127,17 @@ header li a:active, footer li a:active {
 .mainlists li {
 	list-style-type: disc;
 	font-family: tahoma;
-	max-width:700px;
-	margin: auto;
+	max-width: 65ch;
+	margin:.5ch auto;
 	color: #c5ffff;
+}
+
+.mainlists-ol li {
+	font-family: tahoma;
+	max-width: 60ch;
+	color: #c5ffff;
+	list-style-type: number;
+	margin: .5ch auto;
 }
 
 
@@ -141,11 +148,4 @@ header li a:active, footer li a:active {
 
 .currentpage a {
 	color: #c5ffff;
-}
-
-
-@media only screen and (max-width: 120ch) {
-	header, footer {
-	width: 98%;
-	}
 }

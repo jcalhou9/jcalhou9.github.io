@@ -17,24 +17,36 @@ document.getElementById("submit").onclick = function greetUser() {
     const greetingElement = document.getElementById("greeting");
     greetingElement.textContent = `Welcome to Fizz Buzz, ${fullName}!`;
 
-    
     const output = document.getElementById('output');
-    const word3 = 'Student';
-    const word5 = 'Dreamer';
-	const mainword ='Study';
+    textContent = '';
+
+    const divisors = {
+        3: 'Student',
+        5: 'Dreamer',
+        7: 'BANG!'
+    };
+    
     const countLimit = 140;
+
+    function checkDivision(num, divisor) {
+        return num % divisor === 0;
+    }
 
     for (let count = 1; count <= countLimit; count++) {
         let listItem = document.createElement('li');
-        if (count % 3 === 0 && count % 5 === 0) {
-            listItem.textContent = `${count}. ${word3} ${word5}`;
-        } else if (count % 3 === 0) {
-            listItem.textContent = `${count}. ${word3}`;
-        } else if (count % 5 === 0) {
-            listItem.textContent = `${count}. ${word5}`;
-        } else {
-		listItem.textContent = `${count}. ${mainword}`;
+        let result = '';
+
+        Object.entries(divisors).forEach(([divisor, word]) => {
+            if (checkDivision(count, divisor)) {
+                result += word + ' ';
+            }
+        });
+
+        if (result === '') {
+            result = 'Study';
         }
+
+        listItem.textContent = `${count}. ${result.trim()}`;
         output.appendChild(listItem);
     }
 };
