@@ -1,8 +1,15 @@
 /* Jeremy Calhoun */
 /* WEB115-N801 Fall 24 */
 
+:root {
+	--heading-font: Didot;
+}
+
 html {
-	background: #333333;
+	background: #555555;
+	font-family: tahoma;
+	max-width: 120ch;
+	margin: 0 auto;
 }
 
 header, footer {
@@ -10,7 +17,7 @@ header, footer {
 	margin: 0 auto;
 	text-align: center;
 	color: #c5ffff;
-	background-color: #2f2f5d99;
+	background-color: #2f2f5d;
 }
 
 header ul, footer ul {
@@ -28,7 +35,6 @@ header li, footer li {
 /* webpage and social link buttons */
 header li a, footer li a {
 	color: #c5ffff;
-	font-family: tahoma;
 	text-decoration: none;
 	padding: .7ch 1ch;
 	color: #2f2f5d;
@@ -45,12 +51,12 @@ footer p {
 
 h1 {
 	margin: .5ch 0;
-	font-family: Calibri;
+	font-family: var(--heading-font);
 	font-size: 2.5em;
 }
 
 h2 {
-	font-family: Calibri;
+	font-family: var(--heading-font);
 	font-size: 2em;
 	text-align: center;
 	color: #7ca3f5;
@@ -58,21 +64,19 @@ h2 {
 }
 
 h3 {
-	font-family: Calibri;
+	font-family: var(--heading-font);
 	text-align: center;
 	color: #7ca3f5;
 	margin: 1ch auto;
 }
 
 p, legend, label {
-	font-family: tahoma;
 	max-width: 75ch;
 	color: #c5ffff;
 	margin: 1ch auto;
 }
 
 p a {
-	font-family: tahoma;
 	color: #c5ffff;
 }
 
@@ -96,7 +100,6 @@ main ul {
 }
 
 main dl {
-	font-family: tahoma;
 	max-width: 60ch;
 	color: #c5ffff;
 	margin: .5ch auto;
@@ -111,13 +114,12 @@ img {
 figcaption {
 	text-align: center;
 	margin-top: 0ch;
-	font-family: tahoma;
 	color: #c5ffff;
 }
 
 /* webpage and social link buttons */
 header li:hover, footer li:hover {
-	background-color: #5b65db99;
+	background-color: #5b65db;
 }
 
 p a:hover {
@@ -127,14 +129,12 @@ p a:hover {
 /* any list in the main section */
 .mainlists li {
 	list-style-type: disc;
-	font-family: tahoma;
 	max-width: 65ch;
 	margin:.5ch auto;
 	color: #c5ffff;
 }
 
 .mainlists-ol li {
-	font-family: tahoma;
 	max-width: 60ch;
 	color: #c5ffff;
 	list-style-type: number;
