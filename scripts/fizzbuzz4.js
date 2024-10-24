@@ -12,7 +12,6 @@ document.getElementById("submit").onclick = function greetUser() {
     }
     
     const fullName = middleInitial ? `${firstName} ${middleInitial}. ${lastName}` : `${firstName} ${lastName}`;
-
     const greetingElement = document.getElementById("greeting");
     greetingElement.textContent = `Welcome to Fizz Buzz, ${fullName}!`;
 
