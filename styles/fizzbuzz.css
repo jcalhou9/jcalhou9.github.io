@@ -4,8 +4,13 @@ WEB115-N801 Fall 24 */
 fieldset {
 	color: white;
 	width: 30ch;
-	margin: 0 auto;
-	border: none;
+	margin: 1ch auto;
+	box-sizing: border-box;
+	border: 3px solid #aaa;
+}
+
+fieldset:first-of-type {
+	margin-top: 0;
 }
 
 main nav {
@@ -52,7 +57,6 @@ button:hover {
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-	font-family: tahoma;
 	max-width: 800px;
 	margin: auto;
 	color: #c5ffff;

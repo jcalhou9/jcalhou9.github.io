@@ -3,11 +3,12 @@
 
 :root {
 	--heading-font: Didot;
+	--light-text-color: #c5ffff;
 }
 
 html {
-	background: #555555;
-	font-family: tahoma;
+	background: #333;
+	font-family: Futura;
 	max-width: 120ch;
 	margin: 0 auto;
 }
@@ -16,7 +17,7 @@ header, footer {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-	color: #c5ffff;
+	color: var(--light-text-color);
 	background-color: #2f2f5d;
 }
 
@@ -24,7 +25,7 @@ header ul, footer ul {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding:0ch;
+	padding: 0ch;
 	margin: 0;
 }
 
@@ -34,7 +35,7 @@ header li, footer li {
 
 /* webpage and social link buttons */
 header li a, footer li a {
-	color: #c5ffff;
+	color: var(--light-text-color);
 	text-decoration: none;
 	padding: .7ch 1ch;
 	color: #2f2f5d;
@@ -70,14 +71,21 @@ h3 {
 	margin: 1ch auto;
 }
 
-p, legend, label {
-	max-width: 75ch;
-	color: #c5ffff;
+p, label {
+	max-width: 100ch;
+	color: var(--light-text-color);
+	margin: 1ch auto 1ch 8ch;
+}
+
+legend {
+	text-align: center;
+	max-width: 30ch;
+	color: var(--light-text-color);
 	margin: 1ch auto;
 }
 
 p a {
-	color: #c5ffff;
+	color: var(--light-text-color);
 }
 
 body {
@@ -96,13 +104,12 @@ main {
 
 main ul {
 	padding: 0;
-	margin: .5ch auto;
+	max-width: 100ch;
 }
 
 main dl {
-	max-width: 60ch;
-	color: #c5ffff;
-	margin: .5ch auto;
+	color: var(--light-text-color);
+	margin: 1ch auto 1ch 4ch;
 }
 
 /* webpage pictures */
@@ -114,7 +121,7 @@ img {
 figcaption {
 	text-align: center;
 	margin-top: 0ch;
-	color: #c5ffff;
+	color: var(--light-text-color);
 }
 
 /* webpage and social link buttons */
@@ -126,19 +133,25 @@ p a:hover {
 	color: #7ca3f5;
 }
 
+.mainlists {
+	margin: 1ch auto 0 8ch;
+}
+
 /* any list in the main section */
 .mainlists li {
 	list-style-type: disc;
-	max-width: 65ch;
-	margin:.5ch auto;
-	color: #c5ffff;
+	margin-top:.5ch;
+	color: var(--light-text-color);
 }
 
 .mainlists-ol li {
-	max-width: 60ch;
-	color: #c5ffff;
+	color: var(--light-text-color);
 	list-style-type: number;
-	margin: .5ch auto;
+	margin: 1ch auto 1ch 2ch;
+}
+
+.slogan {
+	margin: 1ch auto;
 }
 
 
@@ -148,5 +161,5 @@ p a:hover {
 }
 
 .currentpage a {
-	color: #c5ffff;
+	color: var(--light-text-color);
 }
