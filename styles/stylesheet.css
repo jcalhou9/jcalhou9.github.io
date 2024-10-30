@@ -47,6 +47,14 @@ header nav, footer nav {
 	background-color: #77eefd;
 }
 
+header nav {
+	border-radius: 0 0 15px 15px;
+}
+
+footer nav {
+	border-radius: 15px 15px 0 0;
+}
+
 footer p {
 	margin: 1ch auto;
 }
