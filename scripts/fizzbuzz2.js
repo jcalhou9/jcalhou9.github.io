@@ -1,14 +1,19 @@
 /* Jeremy Calhoun
 WEB115-N801 Fall 24 */
 
-document.getElementById("submit").onclick = function greetUser() {
+document.getElementById("reset").onclick = function reset() {
+    document.getElementById("greeting").textContent = "Let's go again!";
+    document.getElementById("output").textContent = '';
+};
+
+document.getElementById("form").onsubmit = function greetUser(submit) {
+    submit.preventDefault();
 
     const firstName = document.getElementById("first-name").value;
     const middleInitial = document.getElementById("middle-initial").value;
     const lastName = document.getElementById("last-name").value;
 
     if (!firstName || !lastName) {
-        alert("First and last names are required!");
         return;
     }
 

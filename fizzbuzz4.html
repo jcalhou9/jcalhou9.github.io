@@ -34,43 +34,48 @@
 		</header>
 
         <main>
-            <h2 id="greeting">Fizz Buzz 4</h2>
-            <fieldset class="name">
-                <legend>Please enter your name.</legend>
-                <!-- first name -->
-                <label for="first-name">First Name</label>
-                <input id="first-name" placeholder=" First Name" required>
-                <!-- middle initial -->
-                <label for="middle-initial">Middle Initial</label>
-                <input id="middle-initial" placeholder=" Middle initial" maxlength="1">
-                <!-- last name -->
-                <label for="last-name">Last Name</label>
-                <input id="last-name" placeholder=" Last Name" required>
-            </fieldset>
+            <h2>Fizz Buzz 3</h2>
+            <h3 id="greeting">Are you ready for Fizz Buzz?</h3>
+			<form id="form">
+                <fieldset class="name">
+                    <legend>Please enter your name.</legend>
+                    <!-- first name -->
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" placeholder=" First Name" required>
+                    <!-- middle initial -->
+                    <label for="middle-initial">Middle Initial</label>
+                    <input id="middle-initial" placeholder=" Middle initial" maxlength="1">
+                    <!-- last name -->
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" placeholder=" Last Name" required>
+                </fieldset>
 
-            <fieldset>
-                <legend>Please enter your favorite words and a corresponding divisor.</legend>
-                <!-- first word and divisor -->
-                <label for="divisor1">First Number</label>
-                <input id="divisor1" type="number" value="3" required>
-                <label for="word1">First Word</label>
-                <input id="word1" type="text" value="Student" required>
-                <!-- second word and divisor -->
-                <label for="divisor2">Second Number</label>
-                <input id="divisor2" type="number" value="5" required>
-                <label for="word2">Second Number</label>
-                <input id="word2" type="text" value="Dreamer" required>
-                <!-- third word and divisor -->
-                <label for="divisor3">Third Number</label>
-                <input id="divisor3" type="number" value="7" required>
-                <label for="word3">Third Word</label>
-                <input id="word3" type="text" value="BANG!" required>
-                <!-- count limit -->
-                <label for="count-limit">Number Limit</label>
-                <input id="count-limit" type="number" value="125" required>
-            </fieldset>
-
-            <button id="submit" type="submit">Let’s go</button>
+                <fieldset>
+                    <legend>Please enter your favorite words and a corresponding divisor.</legend>
+                    <!-- first word and divisor -->
+                    <label for="divisor1">First Number</label>
+                    <input id="divisor1" type="number" value="3" required>
+                    <label for="word1">First Word</label>
+                    <input id="word1" type="text" value="Student" required>
+                    <!-- second word and divisor -->
+                    <label for="divisor2">Second Number</label>
+                    <input id="divisor2" type="number" value="5" required>
+                    <label for="word2">Second Number</label>
+                    <input id="word2" type="text" value="Dreamer" required>
+                    <!-- third word and divisor -->
+                    <label for="divisor3">Third Number</label>
+                    <input id="divisor3" type="number" value="7" required>
+                    <label for="word3">Third Word</label>
+                    <input id="word3" type="text" value="BANG!" required>
+                    <!-- count limit -->
+                    <label for="count-limit">Number Limit</label>
+                    <input id="count-limit" type="number" value="125" required>
+                    <div class="buttons">
+                        <button id="submit" type="submit">Let’s go</button>
+                        <button id="reset" type="reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
             <ul class="fizzbuzz-style2" id="output"></ul>
         </main>
 
@@ -87,7 +92,9 @@
 					<li><a href="https://www.linkedin.com/in/jeremy-calhoun-3aab016a/">Linkedin</a></li>
                 </ul>
             </nav>
-            <p><i>Time does not wait for dreams.</i><br>Created by Jeremy Calhoun, Responsive Web Design Certified</p>
+            <p><i>Time does not wait for dreams.</i><br>Created by Jeremy Calhoun, 
+				<a href="https://www.freecodecamp.org/certification/jcalhou9/responsive-web-design">Responsive Web Design Certified</a>
+			</p>
         </footer> 
     </body>
 </html>

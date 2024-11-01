@@ -34,17 +34,24 @@ label:first-of-type {
 	margin-top: 0;
 }
 
+.buttons {
+	display: flex;
+	margin: 2.5ch auto auto;
+	justify-content: space-around;
+}
+
 button {
-	display: block;
-	margin: 3ch auto auto;
 	height: 4ch;
 	width: 11ch;
-	color: #c5ffff;
-	background-color: #2f2f5d99;
+	color: #2f2f5d;
+	font-weight: bolder;
+	background-color: #77eefd;
 }
 
 button:hover {
-	background-color: #5b65db99;
+	background-color: #2f2f5d;
+	color: #c5ffff;
+	border: 2px solid #77eefd;
 }
 
 #greeting{
@@ -69,5 +76,10 @@ button:hover {
 
 .fizzbuzz-style2 li {
     width: 24ch;
+    text-align: center;
+}
+
+.fizzbuzz-style3 li {
+    width: 25ch;
     text-align: center;
 }

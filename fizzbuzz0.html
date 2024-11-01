@@ -34,17 +34,23 @@
 		</header>
 		
 		<main>
-			<h2 id="greeting">Fizz Buzz 0</h2>
-			<fieldset class="name">
-				<legend>Please enter your name.</legend>
-				<label for="first-name">First Name</label>
-				<input id="first-name" placeholder=" First Name" >
-				<label for="middle-initial">Middle Initial</label>
-				<input id="middle-initial" placeholder=" Middle Initial" maxlength="1" >
-				<label for="last-name">Last Name</label>
-				<input id="last-name" placeholder=" Last Name" >
-				<button id="submit" type="submit">Let’s go</button>
-			</fieldset>
+			<h2>Fizz Buzz 0</h2>
+			<h3 id="greeting">Are you ready for Fizz Buzz?</h3>
+			<form id="form">
+				<fieldset class="name">
+					<legend>Please enter your name.</legend>
+					<label for="first-name">First Name</label>
+					<input id="first-name" placeholder=" First Name" required>
+					<label for="middle-initial">Middle Initial</label>
+					<input id="middle-initial" placeholder=" Middle Initial" maxlength="1" >
+					<label for="last-name">Last Name</label>
+					<input id="last-name" placeholder=" Last Name" required>
+					<div class="buttons">
+						<button id="submit" type="submit">Let’s go</button>
+						<button id="reset" type="reset">Reset</button>
+					</div>
+				</fieldset>
+			</form>
 			<ul class="fizzbuzz-style1" id="output"></ul>
 		</main>
 		
@@ -60,7 +66,9 @@
 					<li><a href="https://www.linkedin.com/in/jeremy-calhoun-3aab016a/">Linkedin</a></li>
 				</ul>
 			</nav>
-			<p><i>Time does not wait for dreams.</i><br>Created by Jeremy Calhoun, Responsive Web Design Certified</p>
+			<p><i>Time does not wait for dreams.</i><br>Created by Jeremy Calhoun, 
+				<a href="https://www.freecodecamp.org/certification/jcalhou9/responsive-web-design">Responsive Web Design Certified</a>
+			</p>
 		</footer>
 	</body>
 </html>
