@@ -3,7 +3,7 @@ WEB115-N801 Fall 24 */
 
 document.getElementById("reset").onclick = function reset() {
     document.getElementById("greeting").textContent = "Let's go again!";
-    document.getElementById("output").textContent = '';
+    document.getElementById("output2").textContent = '';
 };
 
 document.getElementById("form").onsubmit = function greetUser(submit) {
@@ -33,7 +33,7 @@ document.getElementById("form").onsubmit = function greetUser(submit) {
 
 
 
-    const outputList = document.getElementById("output");
+    const outputList = document.getElementById("output2");
     outputList.textContent = "";
 
     for (let i = 1; i <= count; i++) {

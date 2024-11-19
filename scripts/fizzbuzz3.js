@@ -23,7 +23,7 @@ document.getElementById("form").onsubmit = function greetUser(submit) {
     greetingElement.textContent = `Welcome to Fizz Buzz, ${fullName}!`;
 
     const output = document.getElementById('output');
-    textContent = '';
+    output.textContent = '';
 
     const divisors = {
         3: 'Student',

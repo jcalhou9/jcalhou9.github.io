@@ -62,24 +62,34 @@ button:hover {
 	list-style-type: none;
 	padding: 2ch 1.5ch 0;
 	display: flex;
+	flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+	max-width: 800px;
+	margin: auto 25%;
+	color: #c5ffff;
+	max-height: 110ch;
+}
+
+#output2 {
+	list-style-type: none;
+	padding: 2ch 1.5ch 0;
 	max-width: 800px;
 	margin: auto;
 	color: #c5ffff;
 }
 
-.fizzbuzz-style1 li {
+.fizzbuzz0 li {
     width: 35ch;
     text-align: left;
 }
 
-.fizzbuzz-style2 li {
-    width: 24ch;
-    text-align: center;
+.fizzbuzz1 li, .fizzbuzz2 li, .fizzbuzz3 li {
+	width: 25ch;
+	text-align: left;
 }
 
-.fizzbuzz-style3 li {
+.fizzbuzz4 li {
     width: 25ch;
-    text-align: center;
+    text-align: left;
 }

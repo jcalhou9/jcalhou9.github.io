@@ -24,6 +24,7 @@ document.getElementById("form").onsubmit = function greetUser(submit) {
 
     
     const output = document.getElementById('output');
+    output.textContent = '';
     const word3 = 'Student';
     const word5 = 'Dreamer';
 	const mainword ='Study';

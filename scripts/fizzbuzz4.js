@@ -3,7 +3,7 @@ WEB115-N801 Fall 24 */
 
 document.getElementById("reset").onclick = function reset() {
     document.getElementById("greeting").textContent = "Let's go again!";
-    document.getElementById("output").textContent = '';
+    document.getElementById("output2").textContent = '';
 };
 
 document.getElementById("form").onsubmit = function greetUser(submit) {
@@ -21,8 +21,8 @@ document.getElementById("form").onsubmit = function greetUser(submit) {
     const greetingElement = document.getElementById("greeting");
     greetingElement.textContent = `Welcome to Fizz Buzz, ${fullName}!`;
 
-    const output = document.getElementById('output');
-    textContent = '';
+    const output = document.getElementById('output2');
+    output.textContent = '';
     
     const divisor1 = parseInt(document.getElementById("divisor1").value);
     const word1 = document.getElementById("word1").value;
