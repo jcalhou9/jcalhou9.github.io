@@ -9,12 +9,14 @@ document.getElementById("reset").onclick = function reset() {
 document.getElementById("form").onsubmit = function greetUser(submit) {
     submit.preventDefault();
 
-    const firstName = document.getElementById("first-name").value;
+    let firstName = document.getElementById("first-name").value;
     const middleInitial = document.getElementById("middle-initial").value;
-    const lastName = document.getElementById("last-name").value;
+    let lastName = document.getElementById("last-name").value;
+    const mainWord = document.getElementById("main-word").value;
 
     if (!firstName || !lastName) {
-        return;
+        firstName = "Guest";
+        lastName = "User";
     }
     
     const fullName = middleInitial ? `${firstName} ${middleInitial}. ${lastName}` : `${firstName} ${lastName}`;
@@ -52,7 +54,7 @@ document.getElementById("form").onsubmit = function greetUser(submit) {
         });
 
         if (result === '') {
-            result = 'Study';
+            result = mainWord;
         }
 
         listItem.textContent = `${count}. ${result.trim()}`;

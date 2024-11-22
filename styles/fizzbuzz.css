@@ -2,7 +2,6 @@
 WEB115-N801 Fall 24 */
 
 fieldset {
-	color: white;
 	width: 30ch;
 	margin: 1ch auto;
 	box-sizing: border-box;
@@ -87,9 +86,4 @@ button:hover {
 .fizzbuzz1 li, .fizzbuzz2 li, .fizzbuzz3 li {
 	width: 25ch;
 	text-align: left;
-}
-
-.fizzbuzz4 li {
-    width: 25ch;
-    text-align: left;
 }
